@@ -1,5 +1,5 @@
 # AI-Data-analyst
-A simple data analyst project using pandas and for visualization - matplotlib and seaborn but inbuilt with an llm based ai which acts like a brain and morphs the output based on the dataset given.
+A data analyst project that handles data , perform analysis using pandas and for visualization - matplotlib and seaborn but inbuilt with an llm based ai which acts like a brain and morphs the output based on the dataset given.
 
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
@@ -30,7 +30,28 @@ The result is a **self-adapting data analysis pipeline** that behaves like a hum
 No cloud APIs. No blind automation.
 
 ---
+## 🧠 Why This Is Not Just “Using an LLM”
 
+The LLM in this project does **not** generate code, plots, or statistics.
+
+Instead, it acts as a **reasoning layer** that:
+- interprets dataset structure
+- classifies dataset type
+- decides what analysis is meaningful
+- selects appropriate visualizations
+- states limitations explicitly
+
+All execution is handled by Python code.
+
+This ensures:
+- explainability
+- safety
+- reproducible results
+- realistic AI system design
+
+The goal is not automation, but **decision-making intelligence**.
+
+ ---
 ## 🧠 Core Idea
 
 The ai-intelligence is separated from execution.
@@ -39,7 +60,7 @@ The ai-intelligence is separated from execution.
 - The **code executes safely**
 - The AI never writes plotting code or touches raw data
 - Every dataset produces different analysis behavior
-
+---
 ##  Features
 
 - Automatic data cleaning & quality checks  
@@ -58,13 +79,13 @@ The ai-intelligence is separated from execution.
 - **Matplotlib, Seaborn**
 - **ydata-profiling (EDA)**
 - **Ollama (llama3 local LLM)**
-
+---
 ## Setup environmemt(Windows)
 
 python -m venv venv
 venv\Scripts\activate   
 pip install -r requirements.txt
-
+---
 ### Install Ollama
 Download from:
 https://ollama.com
@@ -75,11 +96,12 @@ After installation, pull the model:
 ollama pull llama3
 
 ```
+---
 ## To Run:
 
 python run_pipeline.py
 (this file runs the project in the correct order)
-
+---
 ## Outputs:
 
 reports/
